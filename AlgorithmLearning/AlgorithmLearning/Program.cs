@@ -1,16 +1,13 @@
-﻿using AlgorithmLearning._647回文子串;
-using System;
+﻿using System;
 
 namespace AlgorithmLearning {
     class Program {
         static void Main (string[] args) {
-            
-            // //回文子串
-            // Leetcode_CountSubstrings count = new Leetcode_CountSubstrings();
-            // string s = "aaa";
-            // int num= count.CountSubstrings(s);
-            // Console.WriteLine(num);
 
+            int[] arr = new int[] { 5, 9, 3, 1, 2, 8, 4, 7, 6 };
+            
+
+            Console.WriteLine (arr.ToString ());
         }
     }
 }
