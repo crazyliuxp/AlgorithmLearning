@@ -6,14 +6,14 @@ public class MaoPao {
     public int[] MaoPaoPaiXu (int[] arr) {
         //int[] arr = new int[] { 5, 9, 3, 1, 2, 8, 4, 7, 6 };
 
-        for (int i = arr.Length - 1; i >= 0; i--) {
-            for (int j = i - 1; j >= 0; j--) {
-                int left = arr[j];
-                int right = arr[i];
+        for (int i = 1; i < arr.Length - 1; i++) {
+            for (int j = arr.Length - 1; j >= i; j--) {
+                int left = arr[j - 1];
+                int right = arr[j];
                 if (left > right) {
                     int num = left;
-                    arr[j] = right;
-                    arr[i] = num;
+                    arr[j - 1] = right;
+                    arr[j] = num;
                 }
             }
         }
