@@ -1,5 +1,6 @@
 ﻿using System;
 using AlgorithmLearning._214最短回文串;
+using AlgorithmLearning._557反转字符串中的字符;
 using AlgorithmLearning._657机器人能否返回原点;
 using Models;
 
@@ -27,9 +28,13 @@ namespace AlgorithmLearning {
             //JiQiRen jiQiRen = new JiQiRen();
             //var result = jiQiRen.JudgeCircle("UD");
 
-            ZuiDuanHWC zuiduan = new ZuiDuanHWC();
+            //ZuiDuanHWC zuiduan = new ZuiDuanHWC();
 
-            var result= zuiduan.ShortestPalindrome("abc");
+            //var result= zuiduan.ShortestPalindrome("abc");
+
+            FanZhuan fanZhuan = new FanZhuan();
+
+            var result= fanZhuan.ReverseWords("Let's take LeetCode contest");
 
             Console.WriteLine(result);
         }
