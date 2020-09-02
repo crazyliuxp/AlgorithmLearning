@@ -2,6 +2,7 @@
 using AlgorithmLearning._214最短回文串;
 using AlgorithmLearning._557反转字符串中的字符;
 using AlgorithmLearning._657机器人能否返回原点;
+using AlgorithmLearning.表示数字的字符串;
 using Models;
 
 namespace AlgorithmLearning {
@@ -32,9 +33,12 @@ namespace AlgorithmLearning {
 
             //var result= zuiduan.ShortestPalindrome("abc");
 
-            FanZhuan fanZhuan = new FanZhuan();
+            //FanZhuan fanZhuan = new FanZhuan();
+            //var result= fanZhuan.ReverseWords("Let's take LeetCode contest");
 
-            var result= fanZhuan.ReverseWords("Let's take LeetCode contest");
+            NumberStr numberStr = new NumberStr();
+            var result = numberStr.IsNumber("078332e437");
+
 
             Console.WriteLine(result);
         }
